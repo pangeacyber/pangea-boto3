@@ -229,14 +229,14 @@ wheels = [
 
 [[package]]
 name = "botocore-stubs"
-version = "1.40.55"
+version = "1.40.60"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "types-awscrt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/94/bd/bb4aa3948cd1be1a2fca42f46799625aa3362246091083bed24edce18c5e/botocore_stubs-1.40.55.tar.gz", hash = "sha256:57c8978b0bbe40a9fa29fde564de8a04679a223f430a97d03ada62ec112231af", size = 42250, upload-time = "2025-10-17T20:26:43.138Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/e9/b9ca290cc0dca5a641512427e9bc057bbee175aa7f0ba069ad2f3aff3d15/botocore_stubs-1.40.60.tar.gz", hash = "sha256:5394af28f43eaf5c598a7b440b0d4ef5026fe9096f81cb509075ee92de5b645a", size = 42226, upload-time = "2025-10-27T20:26:07.199Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b5/14/e6527b10e74dc0e01752ebbd9ce0fe4c2cde0f9332935b1d5472265395b6/botocore_stubs-1.40.55-py3-none-any.whl", hash = "sha256:fdc85df8960a6f156c57c5980d125c7467134ca8d612f32175cb88a49a0a6cf5", size = 66541, upload-time = "2025-10-17T20:26:40.49Z" },
+    { url = "https://files.pythonhosted.org/packages/3e/66/629958de671fa14f804bc45ff41a585c9c709869808074496ac37df25d79/botocore_stubs-1.40.60-py3-none-any.whl", hash = "sha256:399e3004e5e496500fe4e8c2ed677211b40c1d23f2304368eb1282100b1b2a58", size = 66541, upload-time = "2025-10-27T20:26:04.351Z" },
 ]
 
 [[package]]
@@ -950,7 +950,7 @@ dev = [
 
 [[package]]
 name = "pangea-sdk"
-version = "6.8.0"
+version = "6.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -964,9 +964,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "yarl" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/2c/fdea2329db56a133a3b62bb6ac96df8fe90a6d49c1b1a68a04c6e93909b2/pangea_sdk-6.8.0.tar.gz", hash = "sha256:e5840e28ff133a0c88c8e2d45dced7af945120f3e2f4fa4c61307c0cba95bac1", size = 139120, upload-time = "2025-10-15T18:45:17.265Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e9/16/e716972129d9c389731d01d14f7eae598a4fabb9f603f45950473fa4e09a/pangea_sdk-6.9.0.tar.gz", hash = "sha256:6a590cc14125513e9cfc315886231181614754e8126276fef8b5cd538a69bff7", size = 139138, upload-time = "2025-10-27T21:36:06.634Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c6/44/fb0b1921321a4135d9a0fe0f8a3383c4ff13d29aa96163c7e19305bb46db/pangea_sdk-6.8.0-py3-none-any.whl", hash = "sha256:0f2287522f0de58b5bb28b7c08717ad812418704f7cad601f56dbe8f43ec724b", size = 170636, upload-time = "2025-10-15T18:45:15.808Z" },
+    { url = "https://files.pythonhosted.org/packages/be/cd/ca63a3361f3edba85d0c5a45cf0d87d0553429727cbd55db5e5f218f756f/pangea_sdk-6.9.0-py3-none-any.whl", hash = "sha256:ff6cd4c940cb8c8d86225e856103fea0ac734dfcb5ed2dc07f3a77088bc1ad70", size = 170645, upload-time = "2025-10-27T21:36:05.427Z" },
 ]
 
 [[package]]
