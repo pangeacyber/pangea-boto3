@@ -935,7 +935,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "boto3", specifier = ">=1.40.59" },
-    { name = "pangea-sdk", specifier = ">=6.8.0" },
+    { name = "pangea-sdk", specifier = ">=6.9.0" },
     { name = "typing-extensions", specifier = ">=4.15.0" },
 ]
 
