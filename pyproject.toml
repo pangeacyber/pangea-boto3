@@ -10,7 +10,7 @@ authors = [
 requires-python = ">=3.10"
 dependencies = [
     "boto3>=1.40.59",
-    "pangea-sdk>=6.8.0",
+    "pangea-sdk>=6.9.0",
     "typing-extensions>=4.15.0",
 ]
 

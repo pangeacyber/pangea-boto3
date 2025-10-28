@@ -8,7 +8,7 @@ from mypy_boto3_bedrock_runtime.type_defs import (
     MessageTypeDef,
 )
 from pangea import PangeaConfig
-from pangea.services import AIGuard
+from pangea.services import AIGuard, Redact
 from pangea.services.ai_guard import Message as PangeaMessage
 from typing_extensions import Unpack
 
@@ -49,6 +49,7 @@ def converse(
     pangea_system = [PangeaMessage(role="system", content=message["text"]) for message in system]
 
     ai_guard_client = AIGuard(token=pangea_api_key, config=PangeaConfig(base_url_template=pangea_base_url_template))
+    redact_client = Redact(token=pangea_api_key, config=PangeaConfig(base_url_template=pangea_base_url_template))
     guard_input_response = ai_guard_client.guard_text(
         messages=pangea_system + pangea_messages, recipe=pangea_input_recipe
     )
@@ -67,6 +68,15 @@ def converse(
 
     bedrock_response = client.converse(**(kwargs | {"messages": messages}))
     output_message = bedrock_response["output"]["message"]
+
+    # FPE decryption.
+    if guard_input_response.result.fpe_context is not None:
+        redact_response = redact_client.unredact(
+            output_message,
+            fpe_context=guard_input_response.result.fpe_context,
+        )
+        assert redact_response.result is not None
+        output_message["content"] = redact_response.result.data["content"]
 
     guard_output_response = ai_guard_client.guard_text(
         messages=pangea_messages
